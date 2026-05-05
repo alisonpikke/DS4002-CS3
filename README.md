@@ -1,32 +1,32 @@
-# DS 4002 Case Study: STEM vs. Humanities — Sentiment Analysis of UVA Course Reviews
+# DS 4002 Case Study: Policy Uncertainty and Housing Market Volatility in Charlottesville
 
-**Created by:** Alison Pike 
+**Created by:** Alison Pike  
 **Course:** DS 4002 | Spring 2026  
+**Target Audience:** 2nd Year UVA Data Science Students  
 
 ---
 
 ## Overview
 
-Do UVA students talk about their STEM courses differently than their Humanities courses? This case study challenges you to find out using sentiment analysis and real student review data scraped from [theCourseForum](https://thecourseforum.com/).
+Can the language used in local government meetings predict housing price swings in Charlottesville? This case study challenges you to find out by combining text analysis of Charlottesville Housing Advisory Committee (HAC) meeting minutes with real housing market data from the Charlottesville Area Association of Realtors (CAAR).
 
-You will collect text data, apply a sentiment analysis tool, and use a statistical test to determine whether any difference you find is meaningful — or just noise.
+You will scrape and process text data, build an uncertainty score, merge it with housing market data, and use a time-series regression model to evaluate whether policy uncertainty predicts short-term housing price volatility.
 
 ---
 
 ## Repository Structure
 
 ```
-CS3_repo/
+CS3_housing/
 ├── HOOK/
 │   └── hook_document.pdf        # One-page mission document to get you started
 ├── RUBRIC/
 │   └── rubric.pdf               # Full rubric describing the deliverable and criteria
 ├── MATERIALS/
-│   ├── explainer_sentiment.pdf  # Blog-style explainer on sentiment analysis with VADER
-│   └── reference_ttest.pdf      # Reference article on Welch's t-test
+│   ├── explainer_timeseries.pdf # Blog-style explainer on time-series regression
+│   └── reference_uncertainty.pdf # Reference article on text-based uncertainty measurement
 ├── DATA/
-│   ├── uva_reviews_final.csv           # Pre-scraped raw review data
-│   └── uva_reviews_with_sentiment.csv  # Reviews with VADER sentiment scores applied
+│   └── cleaned_housing_market_data.csv  # Pre-cleaned combined dataset
 └── README.md
 ```
 
@@ -34,27 +34,33 @@ CS3_repo/
 
 ## Your Mission
 
-You are a data scientist trying to understand student experience at UVA. Using course reviews from theCourseForum, your job is to:
+You are a data analyst for the City of Charlottesville. Your supervisor wants to know: does the level of uncertainty-related language in local Housing Advisory Committee meetings predict short-term housing price volatility in Charlottesville?
 
-1. Collect and preprocess text review data across STEM and Humanities departments
-2. Apply VADER sentiment analysis to score each review
-3. Run a statistical test to determine if the difference in sentiment is significant
-4. Summarize your findings in a short written report
+Your job is to:
+1. Collect and process text from HAC meeting minutes
+2. Build a quantitative uncertainty score from the text
+3. Merge it with monthly CAAR housing market data
+4. Run a time-series regression to evaluate the relationship
+5. Report your findings and interpret what they mean for the Charlottesville housing market
 
 ---
 
 ## Data
 
-The `DATA/` folder contains pre-scraped review data from theCourseForum, covering 8 departments:
-- **STEM:** CS, BIOL, CHEM, APMA  
-- **Humanities:** SOC, PHIL, HIST, PSYC
+The `DATA/` folder contains the pre-cleaned combined dataset. Raw data sources include:
 
-If you wish to re-scrape the data yourself, you are more than welcome to with a web scraper. Note that theCourseForum may restrict automated requests from certain environments.
+- **HAC Meeting Minutes** — Charlottesville Housing Advisory Committee, available at:  
+  https://www.charlottesville.gov/1077/Agendas-Minutes
+- **CAAR Monthly Housing Reports** — Charlottesville Area Association of Realtors, available at:  
+  https://www.virginiacountryliving.com/caar-market-reports.php
+
+The dataset covers 8 usable months of 2025 (months without meetings or CAAR reports were excluded).
 
 ---
 
 ## References
 
-1. Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. *ICWSM*.
-2. Duke University. "Welch's T-test." Statistical Education Resource Center, 2024. https://sites.nicholas.duke.edu/statsreview/means/welch/
-3. theCourseForum. https://thecourseforum.com/
+1. "Agendas & Minutes | Charlottesville, VA," Charlottesville.gov, 2023. https://www.charlottesville.gov/1077/Agendas-Minutes
+2. "2025 CAAR Market Trends," Virginiacountryliving.com, 2025. https://www.virginiacountryliving.com/caar-market-reports.php
+3. GeeksforGeeks, "Time Series Regression," 2025. https://www.geeksforgeeks.org/data-science/time-series-regression/
+4. Original project repository: https://github.com/emilyjmoore/DS_4002_Project_1
