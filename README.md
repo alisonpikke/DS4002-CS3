@@ -2,7 +2,6 @@
 
 **Created by:** Alison Pike 
 **Course:** DS 4002 | Spring 2026  
-**Target Audience:** 2nd Year UVA Data Science Students
 
 ---
 
@@ -42,8 +41,6 @@ You are a data scientist trying to understand student experience at UVA. Using c
 3. Run a statistical test to determine if the difference in sentiment is significant
 4. Summarize your findings in a short written report
 
-See the **HOOK** document to get started and the **RUBRIC** for full deliverable details.
-
 ---
 
 ## Data
@@ -52,7 +49,7 @@ The `DATA/` folder contains pre-scraped review data from theCourseForum, coverin
 - **STEM:** CS, BIOL, CHEM, APMA  
 - **Humanities:** SOC, PHIL, HIST, PSYC
 
-If you wish to re-scrape the data yourself, refer to the scraping approach described in the rubric. Note that theCourseForum may restrict automated requests from certain environments.
+If you wish to re-scrape the data yourself, you are more than welcome to with a web scraper. Note that theCourseForum may restrict automated requests from certain environments.
 
 ---
 
