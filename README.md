@@ -17,11 +17,9 @@ You will scrape and process text data, build an uncertainty score, merge it with
 ## Repository Structure
 
 ```
-CS3_housing/
-├── HOOK/
-│   └── hook_document.pdf        # One-page mission document to get you started
-├── RUBRIC/
-│   └── rubric.pdf               # Full rubric describing the deliverable and criteria
+DS4002-CS3/
+├── Hook CS3.pdf                 # One-page mission document to get you started
+├── Rubric CS3.pdf               # Full rubric describing the deliverable and criteria
 ├── MATERIALS/
 │   ├── explainer_timeseries.pdf # Blog-style explainer on time-series regression
 │   └── reference_uncertainty.pdf # Reference article on text-based uncertainty measurement
