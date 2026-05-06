@@ -1,0 +1,9 @@
+date,file_name_minutes,start_time,end_time,housing_mentions,uncertainty_mentions,housing_uncertainty_sentences,uncertainty_score,sales,pending_sales,new_listings,median_list_price,median_sales_price,median_price_per_sqft,sold_dollar_volume_millions,median_sold_ask_price_ratio,median_days_on_market,new_construction_sales,price_volatility,meeting_duration_min
+2025-03,HAC Minutes 03-2025.txt,12:09 PM,12:59 PM,20,16,7,0.4118,290,408,633,410000,448500,259,160.5,1.0,10,73,,82
+2025-04,HAC Minutes 04-2025.txt,12:05 PM,1:58 PM,35,12,2,0.1667,321,317,477,425000,450000,268,228.3,0.995,16,66,0.00334,108
+2025-05,HAC Minutes 05-2025.txt,12:08 PM,1:10 PM,28,10,4,0.2,345,370,510,430000,462000,272,195.4,1.002,12,70,0.02667,92
+2025-06,HAC Minutes 06-2025.txt,12:06 PM,1:45 PM,41,18,9,0.4118,310,395,580,440000,495000,285,210.7,1.01,8,82,0.07143,110
+2025-07,HAC Minutes 07-2025.txt,12:10 PM,1:05 PM,18,7,3,0.0769,280,290,420,415000,451000,261,175.2,0.998,14,58,-0.08909,75
+2025-08,HAC Minutes 08-2025.txt,12:07 PM,1:22 PM,30,14,6,0.2,330,360,495,435000,468000,275,202.1,1.001,11,74,0.0377,95
+2025-09,HAC Minutes 09-2025.txt,12:05 PM,1:30 PM,33,11,5,0.1875,315,340,530,445000,490000,282,218.6,1.005,9,79,0.04701,100
+2025-10,HAC Minutes 10-2025.txt,12:09 PM,1:17 PM,25,9,3,0.0968,300,320,460,420000,455000,265,185.3,0.997,13,65,-0.07143,88
